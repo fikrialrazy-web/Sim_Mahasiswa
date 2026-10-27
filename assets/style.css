@@ -1,0 +1,251 @@
+/* SIM Mahasiswa - simple stylesheet */
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    background: #f4f4f4;
+}
+
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+h1, h2, h3 { margin: 0; color: #222; font-weight: 600; }
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 14px 20px;
+}
+
+.brand {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+}
+.brand:hover { text-decoration: none; }
+
+.header-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    color: #666;
+}
+
+.header-nav a { color: #555; }
+.header-nav a:hover { color: #2563eb; }
+.header-nav a.active { color: #222; font-weight: 600; }
+
+/* Page */
+main { padding: 24px 0 40px; }
+
+.page-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.page-head h1 { font-size: 18px; }
+.page-sub { margin: 4px 0 0; font-size: 13px; color: #777; }
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 8px 14px;
+    font: inherit;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #333;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover { background: #f0f0f0; text-decoration: none; }
+
+.btn-primary {
+    color: #fff;
+    background: #2563eb;
+    border-color: #2563eb;
+}
+
+.btn-primary:hover { background: #1d4ed8; border-color: #1d4ed8; }
+
+/* Table */
+.table-wrap {
+    overflow-x: auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+th {
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+    background: #fafafa;
+}
+
+tbody tr:last-child td { border-bottom: 0; }
+tbody tr:hover { background: #fafafa; }
+
+td.center, th.center { text-align: center; }
+td.actions, th.actions { text-align: right; white-space: nowrap; }
+
+.link-edit { color: #2563eb; }
+.link-del { color: #c0392b; }
+
+/* Empty state */
+.empty {
+    padding: 32px 20px;
+    text-align: center;
+    color: #777;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.empty p { margin: 0 0 14px; }
+
+/* Alerts */
+.alert {
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    font-size: 13px;
+    border-radius: 4px;
+}
+
+.alert-error {
+    color: #a94442;
+    background: #fdecea;
+    border: 1px solid #f5c6cb;
+}
+
+/* Forms */
+.form-box {
+    max-width: 480px;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.field { margin-bottom: 16px; }
+
+.field label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+}
+
+.field input {
+    width: 100%;
+    padding: 8px 10px;
+    font: inherit;
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.field input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, .15);
+}
+
+.form-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.back-link { display: inline-block; margin-bottom: 14px; font-size: 13px; }
+
+/* Login */
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 360px;
+    padding: 28px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.login-box h1 { font-size: 18px; }
+.login-box .sub { margin: 4px 0 20px; font-size: 13px; color: #777; }
+
+.login-lang {
+    margin-bottom: 16px;
+    font-size: 12px;
+    text-align: right;
+    color: #999;
+}
+
+.login-box .btn { width: 100%; margin-top: 4px; }
+
+.foot-note {
+    margin: 16px 0 0;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .container { padding: 0 14px; }
+    .header-inner { padding: 12px 14px; }
+    th, td { padding: 9px 10px; }
+}
